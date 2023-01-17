@@ -9,8 +9,8 @@ pipeline {
     stage('docker build') {
       steps {
         sh '''
-        sudo docker build -t 192.168.0.195:5000/jje:latest .
-        sudo docker push 192.168.0.195:5000/jje:latest
+        sudo docker build -t 192.168.0.195:5000/nginx .
+        sudo docker push 192.168.0.195:5000/nginx
         '''
       }
     }
