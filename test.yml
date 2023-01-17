@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: 192.168.0.195:8080/nginx:jje
+      image: 192.168.0.195:5000/nginx:jje
 ---
 apiVersion: v1
 kind: Service
