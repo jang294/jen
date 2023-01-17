@@ -1,2 +1,2 @@
-FROM 192.168.0.195:8080/nginx:latest
-ADD index.html /usr/share/nginx/html/index
+FROM 192.168.0.195:5000/nginx:latest
+ADD index.html /usr/share/nginx/html
