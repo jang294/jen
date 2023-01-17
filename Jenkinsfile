@@ -9,8 +9,8 @@ pipeline {
     stage('docker build') {
       steps {
         sh '''
-        sudo docker build -t rapa.iptime.org:5000/mynginx:latest .
-        sudo docker push rapa.iptime.org:5000/mynginx:latest
+        sudo docker build -t 192.168.0.195:5000/eun:latest .
+        sudo docker push 192.168.0.195:5000/eun:latest
         '''
       }
     }
