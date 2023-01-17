@@ -18,9 +18,9 @@ pipeline {
     stage('deploy k8s') {
       steps {
         sh '''
-        sudo kubectl delete -f np-pod.yml
+        sudo kubectl delete -f test.yml
         sleep 10
-        sudo kubectl apply -f np-pod.yml
+        sudo kubectl apply -f test.yml
         '''
       }
     }
