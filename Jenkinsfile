@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git scm update') {
       steps {
-        git url: 'https://github.com/jongsamsunduck/jen', branch: 'main'
+        git url: 'https://github.com/jongsamsunduck/jen.git', branch: 'main'
       }
     }
     stage('docker build') {
@@ -18,8 +18,6 @@ pipeline {
     stage('deploy k8s') {
       steps {
         sh '''
-        sudo kubectl delete -f test.yml
-        sleep 10
         sudo kubectl apply -f test.yml
         '''
       }
